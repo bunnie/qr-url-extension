@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "URL as QR",
+  "version": "1.0",
+  "description": "Shows the current page's domain as a QR code.",
+  "permissions": ["tabs", "activeTab"],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
