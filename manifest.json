@@ -12,6 +12,9 @@
     "default_popup": "popup.html"
   },
   "background": {
+    // Chrome required section
+    "service_worker": "background.js",
+    // Firefox required section
     "scripts": ["background.js"]
   }
 }
